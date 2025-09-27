@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { MoveUpRight, Search, Menu } from 'lucide-react'
+import { Search } from 'lucide-react'
 
 export const StyledHeader = styled.header`
 
@@ -50,16 +50,20 @@ export const StyledHeader = styled.header`
         }
     }
 
-
     .texts {
         color: #6b6b6b;
     }
 
     .icons {
         color: #6b6b6b;
-        width: 25px;
-        height: 25px; 
+        width: 20px;
+        height: 20px; 
         cursor: pointer;
+    }
+
+    #move-up-icon {
+        width: 15px;
+        height: 15px; 
     }
 
     #pfp {
@@ -99,12 +103,3 @@ export const SearchIcon = styled(Search)`
   width: 15px;
   height: 15px;
 `;
-
-
-
-// ICONS
-export const MoveUpRightIcon = styled(MoveUpRight)`
-    width: 15px;
-    height: 15px;
-    color: #6b6b6b;
-`

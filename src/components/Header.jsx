@@ -2,18 +2,17 @@ import {
     StyledHeader,
     SearchBar,
     SearchInput,
-    MoveUpRightIcon,
     SearchIcon
 } from './styles/Header.styled';
 
-import { Menu, SquarePenIcon, Bell } from 'lucide-react'
+import { MoveUpRightIcon, Menu, SquarePenIcon, Bell } from 'lucide-react'
 
 function Header() {
     return (
         <StyledHeader>
             <div id='top' className='hidden-on-mobile'>
                 <span>Open in app</span>
-                <MoveUpRightIcon></MoveUpRightIcon>
+                <MoveUpRightIcon id='move-up-icon' className='icons' />
             </div>
 
             <div id='bottom'>
@@ -22,8 +21,8 @@ function Header() {
                     <div>
                         <img src='/medium-logo.png' width={110} />
                     </div>
-                    <div id='search-parent'>
-                        <SearchBar className='hidden-on-mobile'>
+                    <div className='hidden-on-mobile'>
+                        <SearchBar>
                             <SearchIcon className="icons"></SearchIcon>
                             <SearchInput type='text' placeholder='Search'></SearchInput>
                         </SearchBar>
