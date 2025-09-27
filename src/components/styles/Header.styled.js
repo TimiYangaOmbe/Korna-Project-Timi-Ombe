@@ -2,6 +2,9 @@ import styled from "styled-components";
 import { Search } from 'lucide-react'
 
 export const StyledHeader = styled.header`
+    position: sticky;
+    top: 0;
+    background-color: white;
 
     .hidden-on-mobile {
         display: none;
