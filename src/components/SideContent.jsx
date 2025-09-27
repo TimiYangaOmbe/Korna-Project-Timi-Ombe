@@ -1,11 +1,12 @@
 import { staffPicks } from "../lib/articles";
-import { SideContentMain } from "./styles/SideContent.styled";
+import { topics } from "../lib/topics";
+import { SideContentMain, StaffPickSection, RecommendedSection } from "./styles/SideContent.styled";
 
 function SideContent() {
     return(
         <SideContentMain>
-            <h4>Staff Picks</h4>
-            <div id="staff-picks">
+            <h3>Staff Picks</h3>
+            <StaffPickSection>
                 <div id="picks">
                     {
                         staffPicks.map((pick, idx) => 
@@ -37,8 +38,19 @@ function SideContent() {
                     }
                 </div>
                 <a href="#" class="see-more">See full list</a>
-            </div>
-            <div></div>
+            </StaffPickSection>
+
+            <h3>Recommended topics</h3>
+            <RecommendedSection>
+                <div className="tags">
+                    {
+                        topics.map((topic, idx) => 
+                            <div key={idx}>{topic}</div>
+                        )
+                    }
+                </div>
+                <a href="#" class="see-more">See more topics</a>
+            </RecommendedSection>
             <div></div>
         </SideContentMain> 
     )
