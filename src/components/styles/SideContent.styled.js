@@ -141,3 +141,16 @@ export const WhoToFollowSection = styled.div`
 
 
 `
+
+export const ReadingListSection = styled.div`
+    p {
+        font-size: 16px;
+    }
+`
+
+export const Footer = styled.footer`
+    font-size: 14px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+`

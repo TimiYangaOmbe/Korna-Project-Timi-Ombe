@@ -5,7 +5,9 @@ import {
     SideContentMain, 
     StaffPickSection, 
     RecommendedSection,
-    WhoToFollowSection
+    WhoToFollowSection,
+    ReadingListSection,
+    Footer
 } from "./styles/SideContent.styled";
 
 function SideContent() {
@@ -78,6 +80,28 @@ function SideContent() {
                 }
                 <a href="#" class="see-more">See more suggestions</a>
             </WhoToFollowSection>
+
+            <h3>Reading List</h3>
+            <ReadingListSection>
+                <p>
+                    <span>Click the </span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 25 25" class="acm cc"><path fill="currentColor" d="M18 2.5a.5.5 0 0 1 1 0V5h2.5a.5.5 0 0 1 0 1H19v2.5a.5.5 0 1 1-1 0V6h-2.5a.5.5 0 0 1 0-1H18zM7 7a1 1 0 0 1 1-1h3.5a.5.5 0 0 0 0-1H8a2 2 0 0 0-2 2v14a.5.5 0 0 0 .805.396L12.5 17l5.695 4.396A.5.5 0 0 0 19 21v-8.5a.5.5 0 0 0-1 0v7.485l-5.195-4.012a.5.5 0 0 0-.61 0L7 19.985z"></path></svg>
+                    <span>  on any story to easily add it to your reading list or a custom list that you can share.</span>
+                </p>
+            </ReadingListSection>
+
+            <Footer>
+                <a className="see-more footer" href="#">Help</a>
+                <a className="see-more footer" href="#">Status</a>
+                <a className="see-more footer" href="#">About</a>
+                <a className="see-more footer" href="#">Careers</a>
+                <a className="see-more footer" href="#">Press</a>
+                <a className="see-more footer" href="#">Blog</a>
+                <a className="see-more footer" href="#">Privacy</a>
+                <a className="see-more footer" href="#">Rules</a>
+                <a className="see-more footer" href="#">Terms</a>
+                <a className="see-more footer" href="#">Text to speech</a>
+            </Footer>
         </SideContentMain> 
     )
 }
