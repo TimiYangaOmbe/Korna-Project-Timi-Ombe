@@ -62,3 +62,28 @@ export const articles = [
 
     }
 ]
+
+export const staffPicks = [
+  {
+        title: 'How this brand strategist uses Medium to explore ideas, repurpose content, and land clients',
+        author: 'Zulie @ Medium',
+        posted: '2d ago',
+        section: 'The Medium Handbook',
+        icon: '/posts/staff-picks/1.jpg'
+    },
+    {
+        title: 'From “I Have To” to “I Get To”: How One Word Change Rewires Your Brain',
+        author: 'Jud Brewer MD PhD',
+        posted: '5d ago',
+        section: '',
+        icon: '/posts/staff-picks/2.png'
+    },
+    {
+        title: 'Golden Design Lessons from Tokyo Metro',
+        author: 'Linh Nguyen',
+        posted: 'Sep 3',
+        section: '',
+        icon: '/posts/staff-picks/3.jpg'
+
+    }
+]

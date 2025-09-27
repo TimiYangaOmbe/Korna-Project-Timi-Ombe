@@ -1,6 +1,11 @@
 import styled from "styled-components";
 
 export const ContentMain = styled.div`
+    padding-top: 70px;
+
+    @media (min-width: 789px) {
+        padding-right: 70px;
+    }
 `
 
 export const Tab = styled.div`
