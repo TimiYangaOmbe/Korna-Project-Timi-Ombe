@@ -94,3 +94,50 @@ export const RecommendedSection = styled.div`
         border-radius: 15px; 
     }
 `
+
+export const WhoToFollowSection = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    .sugg {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .sugg-left {
+        display: flex;
+        gap: 10px;
+        width: 250px;
+    }
+
+    .sugg-img {
+        width: 46px;
+        height: 46px; 
+        border-radius: 100%;
+    }
+
+    .sugg-left > div {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        color: #6b6b6b
+    }
+
+    .sugg-name {
+        font-weight: 900;
+        font-size: 15px;
+        color: black; 
+    }
+
+    .follow-btn {
+        border: 1px solid black; 
+        color: black;
+        background-color: white;
+        padding: 8px 14px;
+        border-radius: 14px;
+        cursor: pointer;
+    }
+
+
+`

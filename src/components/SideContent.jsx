@@ -1,6 +1,12 @@
 import { staffPicks } from "../lib/articles";
 import { topics } from "../lib/topics";
-import { SideContentMain, StaffPickSection, RecommendedSection } from "./styles/SideContent.styled";
+import { whoToFollowSuggestions} from '../lib/whoToFollow';
+import { 
+    SideContentMain, 
+    StaffPickSection, 
+    RecommendedSection,
+    WhoToFollowSection
+} from "./styles/SideContent.styled";
 
 function SideContent() {
     return(
@@ -51,7 +57,27 @@ function SideContent() {
                 </div>
                 <a href="#" class="see-more">See more topics</a>
             </RecommendedSection>
-            <div></div>
+
+            <h3>Who to follow</h3>
+            <WhoToFollowSection>
+                {
+                    whoToFollowSuggestions.map((suggestion, idx) => 
+                        <div className="sugg" key={idx}>
+                            <div className="sugg-left">
+                                <img className="sugg-img" src={suggestion.pfp} alt="" />
+                                <div>
+                                    <h5 className="sugg-name">{suggestion.name}</h5>
+                                    <p className="sugg-about">{suggestion.about}</p>
+                                </div>
+                            </div>
+                            <div class="sugg-right">
+                                <button className="follow-btn">Follow</button>
+                            </div>
+                        </div>
+                    )
+                }
+                <a href="#" class="see-more">See more suggestions</a>
+            </WhoToFollowSection>
         </SideContentMain> 
     )
 }
