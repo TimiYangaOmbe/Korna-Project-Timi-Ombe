@@ -24,6 +24,7 @@ export const StaffPickSection = styled.div`
     display: flex;
     flex-direction: column;
     gap: 25px;
+    margin: 45px 0px 10px 0px;
 
     #picks {
         display: flex; 
@@ -79,6 +80,7 @@ export const RecommendedSection = styled.div`
     display: flex;
     flex-direction: column;
     gap: 25px;
+    margin: 45px 0px 10px 0px;
 
     .tags {
         display: flex;
@@ -99,6 +101,7 @@ export const WhoToFollowSection = styled.div`
     display: flex;
     flex-direction: column;
     gap: 25px;
+    margin: 45px 0px 10px 0px;
 
     .sugg {
         display: flex;
@@ -143,6 +146,7 @@ export const WhoToFollowSection = styled.div`
 `
 
 export const ReadingListSection = styled.div`
+    margin: 45px 0px 10px 0px;
     p {
         font-size: 16px;
     }
